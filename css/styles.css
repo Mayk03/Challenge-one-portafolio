@@ -1,0 +1,437 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f1f5;
+    color: #333;
+}
+
+/* Contenedor para la foto de perfil */
+.foto_container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.diseño_foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4fb0c6;
+}
+
+/* Contenedor */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Estilo del Header */
+header {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: #4fb0c6;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4fb0c6;
+}
+
+/* presentacion inicial Seccion */
+#presentacion_inicial {
+    background: linear-gradient(135deg, #1e2a38, #36454f);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#presentacion_inicial h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#presentacion_inicial p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+/* Sección "Sobre mí" */
+.sobre_mi {
+    padding: 60px 0;
+}
+
+#sobre_mi p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Sección de Habilidades */
+.habilidades_lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.habilidades_lista li {
+    background-color: #1e2a38;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+/* Sección de Aficiones */
+.icon {
+    font-size: 40px;
+    color: #2979E5;
+    margin-top: 20px;
+}
+#hobbies {
+    background-color: #f0f1f5;
+    padding: 60px 0;
+    background-color: #a9d6e5;
+}
+
+#hobbies h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hobbies_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px; /* Espacio entre tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hobby_tarjeta {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de profundidad */
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Tamaño uniforme para todas las tarjetas */
+    transition: transform 0.3s ease;
+}
+
+.hobby_tarjeta:hover {
+    transform: scale(1.05); /* Efecto hover para agrandar ligeramente */
+}
+
+.hobby_tarjeta h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.hobby_tarjeta p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 20px;
+}
+
+
+/* Sección de Formación */
+.formacion_lista {
+    list-style-type: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.formacion_lista li {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Seccion de Proyectos */
+.projectos_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+.projectos_grid a{
+    text-decoration: none;
+}
+
+.projecto_tarjeta {
+    background-color: #fff;
+    border-bottom: 3px solid #4fb0c6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.projecto_tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 3px solid #f0db4f;
+}
+
+.projecto_tarjeta h3 {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.projecto_tarjeta p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.projecto_tarjeta:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid #3a99a1;
+}
+
+.img_pagina_viajes{
+    margin-top: 4px;
+}
+
+/* Formulario de contacto */
+.contacto{
+    background-color: #a9d6e5;
+    color: #1e2a38;
+}
+
+.formulario_contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.requerimiento_formulario {
+    margin-bottom: 20px;
+}
+
+.requerimiento_formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.requerimiento_formulario input, 
+.requerimiento_formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn_enviar {
+    background-color: #1e2a38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn_enviar:hover {
+    background-color: #379297;
+}
+
+/* Estilo para los enlaces sociales debajo del formulario */
+.redes_sociales {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.icono_nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.parrafo_redes{
+    filter: grayscale(100%);
+}
+
+.parrafo_redes:hover{
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.parrafo_redes:focus{
+    outline: none;
+}
+
+.red_social {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+}
+
+.red_social img {
+    width: 40px;
+    height: 40px; 
+    filter: grayscale(100%);
+}
+
+.red_social img:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.red_social:focus {
+    outline: none;
+}
+
+
+/* Otros estilos */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    #presentacion_inicial h2 {
+        font-size: 2rem;
+    }
+
+    #presentacion_inicial p {
+        font-size: 1rem;
+    }
+
+    .hobby_tarjeta {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projecto_tarjeta {
+        width: 100%;
+    }
+
+    .btn_enviar {
+        width: 100%;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    #presentacion_inicial h2 {
+        font-size: 2.3rem;
+    }
+
+    #presentacion_inicial p {
+        font-size: 1.1rem;
+    }
+
+    .hobby_tarjeta {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .projecto_tarjeta {
+        width: calc(50% - 20px);
+    }
+    .btn_enviar {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos grandes */
+@media (min-width: 769px) {
+    .hobby_tarjeta {
+        width: 300px;
+    }
+
+    .projecto_tarjeta {
+        width: 300px;
+    }
+
+    .btn_enviar {
+        width: auto;
+    }
+}
