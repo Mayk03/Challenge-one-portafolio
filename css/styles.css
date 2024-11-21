@@ -194,10 +194,13 @@ nav ul li a:hover {
 /* Seccion de Proyectos */
 .projectos_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: calc(4 * 300px + 3 * 2rem);
+    box-sizing: border-box;
 }
+
 .projectos_grid a{
     text-decoration: none;
 }
