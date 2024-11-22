@@ -358,19 +358,29 @@ h2 {
 }
 
 /* Estilos para móviles */
-@media (max-width: 480px) {
+/* Responsive para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    /* Contenedor principal */
+    .container {
+        max-width: 100%;
+        padding: 0 1rem; /* Reducir el padding */
+    }
+
+    /* Header */
     header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        letter-spacing: 0.125rem; /* Menos espacio entre letras */
+    }
+
+    nav ul {
+        padding-top: 0.5rem;
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 0 0.5rem; /* Reducir margen entre los links */
     }
 
-    nav ul li a {
-        font-size: 1rem;
-    }
-
+    /* Presentación inicial */
     #presentacion_inicial h2 {
         font-size: 2rem;
     }
@@ -379,62 +389,213 @@ h2 {
         font-size: 1rem;
     }
 
-    .hobby_tarjeta {
-        width: 100%;
-        margin-bottom: 20px;
+    /* Sobre mí */
+    .sobre_mi p {
+        font-size: 1rem;
+    }
+
+    /* Habilidades */
+    .habilidades_lista li {
+        font-size: 1rem;
+        padding: 0.625rem 1rem; /* Reducir el padding de las habilidades */
+    }
+
+    /* Hobbies */
+    .hobby_tarjeta h3 {
+        font-size: 1.25rem;
+    }
+
+    .hobby_tarjeta p {
+        font-size: 0.9rem;
+    }
+
+    /* Proyectos */
+    .projectos_grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        gap: 1rem; /* Espacio reducido entre tarjetas */
     }
 
     .projecto_tarjeta {
         width: 100%;
     }
 
+    /* Formulario de contacto */
+    .formulario_contacto {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .requerimiento_formulario input, 
+    .requerimiento_formulario textarea {
+        font-size: 0.9rem;
+    }
+
     .btn_enviar {
-        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* Redes sociales */
+    .redes_sociales {
+        margin-top: 2rem;
+    }
+
+    .icono_nombre {
+        flex-direction: row; /* Poner los íconos y textos en fila */
+        gap: 1rem;
+    }
+
+    .parrafo_redes {
+        font-size: 1rem;
     }
 }
 
-/* Estilos para tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+/* Responsive para dispositivos medianos (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header */
     header h1 {
         font-size: 2.2rem;
     }
 
     nav ul li {
-        margin: 0 15px;
+        margin: 0 1rem;
     }
 
+    /* Presentación inicial */
     #presentacion_inicial h2 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     #presentacion_inicial p {
-        font-size: 1.1rem;
+        font-size: 1.125rem;
     }
 
-    .hobby_tarjeta {
-        width: calc(50% - 20px);
-        margin-bottom: 20px;
+    /* Habilidades */
+    .habilidades_lista li {
+        font-size: 1.125rem;
+    }
+
+    /* Hobbies */
+    .hobby_tarjeta h3 {
+        font-size: 1.375rem;
+    }
+
+    .hobby_tarjeta p {
+        font-size: 1rem;
+    }
+
+    /* Proyectos */
+    .projectos_grid {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
+        gap: 1.5rem;
     }
 
     .projecto_tarjeta {
-        width: calc(50% - 20px);
-    }
-    .btn_enviar {
         width: 100%;
+    }
+
+    /* Formulario de contacto */
+    .formulario_contacto {
+        max-width: 100%;
+    }
+
+    .requerimiento_formulario input, 
+    .requerimiento_formulario textarea {
+        font-size: 1rem;
+    }
+
+    .btn_enviar {
+        font-size: 1.125rem;
+    }
+
+    /* Redes sociales */
+    .redes_sociales {
+        margin-top: 3rem;
+    }
+
+    .icono_nombre {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .parrafo_redes {
+        font-size: 1.125rem;
     }
 }
 
-/* Estilos para dispositivos grandes */
-@media (min-width: 769px) {
-    .hobby_tarjeta {
-        width: 300px;
+/* Responsive para pantallas grandes (desktop y superiores) */
+@media (min-width: 1025px) {
+    /* Contenedor principal */
+    .container {
+        max-width: 75%;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+
+    /* Presentación inicial */
+    #presentacion_inicial h2 {
+        font-size: 3rem;
+    }
+
+    #presentacion_inicial p {
+        font-size: 1.25rem;
+    }
+
+    /* Habilidades */
+    .habilidades_lista li {
+        font-size: 1.25rem;
+    }
+
+    /* Hobbies */
+    .hobby_tarjeta h3 {
+        font-size: 1.5rem;
+    }
+
+    .hobby_tarjeta p {
+        font-size: 1.125rem;
+    }
+
+    /* Proyectos */
+    .projectos_grid {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+        gap: 2rem;
     }
 
     .projecto_tarjeta {
-        width: 300px;
+        width: 100%;
+    }
+
+    /* Formulario de contacto */
+    .formulario_contacto {
+        max-width: 45rem; /* Un tamaño más grande para el formulario */
+    }
+
+    .requerimiento_formulario input, 
+    .requerimiento_formulario textarea {
+        font-size: 1.125rem;
     }
 
     .btn_enviar {
-        width: auto;
+        font-size: 1.25rem;
+    }
+
+    /* Redes sociales */
+    .redes_sociales {
+        margin-top: 4rem;
+    }
+
+    .icono_nombre {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .parrafo_redes {
+        font-size: 1.25rem;
     }
 }
