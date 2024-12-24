@@ -1,276 +1,492 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Portafolio - Maycol Quinto</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1 id="main-heading">Maycol Quinto</h1>
-            <nav aria-labelledby="main-heading">
-                <ul>
-                    <li><a href="#sobre_mi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#hobbies">Aficiones</a></li>
-                    <li><a href="#formacion">Formación</a></li>
-                    <li><a href="#projectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1 id="main-heading">Maycol Quinto</h1>
+        <nav aria-labelledby="main-heading">
+          <ul>
+            <li><a href="#sobre_mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#hobbies">Aficiones</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#projectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
 
-    <section id="presentacion_inicial" aria-labelledby="presentacion-heading">
-        <div class="container_presentacion">
-            <div class="foto_container">
-                <img src="assets/foto-Maycol-Quinto.jpg" alt="Fotografía de Maycol Quinto" class="diseño_foto">
-            </div>
-            <h2 id="presentacion-heading">Construyendo experiencias digitales que inspiran</h2>
-            <p>
-                Desarrollador Front-End especializado en HTML, CSS y React creando experiencias visuales modernas y atractivas.
-                Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.
-            </p>
+    <section
+      id="presentacion_inicial"
+      aria-labelledby="presentacion-heading"
+    >
+      <div class="container_presentacion">
+        <div class="foto_container">
+          <img
+            src="assets/foto-Maycol-Quinto.jpg"
+            alt="Fotografía de Maycol Quinto"
+            class="diseño_foto"
+          />
         </div>
-    </section>
-    
-
-    <section id="sobre_mi" class="sobre_mi" aria-labelledby="sobre_mi-heading">
-        <h2 id="sobre_mi-heading">Sobre mí</h2>
+        <h2 id="presentacion-heading">
+          Construyendo experiencias digitales que inspiran
+        </h2>
         <p>
-            Soy un apasionado del desarrollo web con enfoque en la creación de interfaces intuitivas y eficientes
-            utilizando HTML, CSS y JavaScript con un enfoque en React. Mi objetivo es transformar ideas en soluciones
-            digitales que no solo sean visualmente impactantes, sino también accesibles y fáciles de usar. Siempre estoy en búsqueda
-            de nuevas tecnologías y tendencias para mejorar mis habilidades y ofrecer mejores soluciones en los proyectos en los que participo.
-            Cuando no estoy escribiendo código, me encanta explorar nuevas herramientas y frameworks para mantenerme actualizado
-            con las mejores prácticas del desarrollo frontend.
+          Desarrollador Front-End especializado en HTML, CSS y React creando
+          experiencias visuales modernas y atractivas. Actualmente estoy
+          participando del proyecto Oracle ONE en Alura Latam.
         </p>
+      </div>
     </section>
-    
 
-    <section id="habilidades" class="habilidades" aria-labelledby="habilidades-heading">
-        <h2 id="habilidades-heading">Habilidades</h2>
-        <ul class="habilidades_lista" role="list">
-            <li role="listitem">HTML, CSS, JavaScript</li>
-            <li role="listitem">React</li>
-            <li role="listitem">Responsive Design</li>
-            <li role="listitem">Git, GitHub</li>
-        </ul>
+    <section
+      id="sobre_mi"
+      class="sobre_mi"
+      aria-labelledby="sobre_mi-heading"
+    >
+      <h2 id="sobre_mi-heading">Sobre mí</h2>
+      <p>
+        Soy un apasionado del desarrollo web con enfoque en la creación de
+        interfaces intuitivas y eficientes utilizando HTML, CSS y JavaScript con
+        un enfoque en React. Mi objetivo es transformar ideas en soluciones
+        digitales que no solo sean visualmente impactantes, sino también
+        accesibles y fáciles de usar. Siempre estoy en búsqueda de nuevas
+        tecnologías y tendencias para mejorar mis habilidades y ofrecer mejores
+        soluciones en los proyectos en los que participo. Cuando no estoy
+        escribiendo código, me encanta explorar nuevas herramientas y frameworks
+        para mantenerme actualizado con las mejores prácticas del desarrollo
+        frontend.
+      </p>
     </section>
-    
 
-    <section id="hobbies" class="aficiones" aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Aficiones</h2>
-        <div class="hobbies_container" role="list">
-            <!-- Hobby: Lectura -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-book" aria-hidden="true"></i>
-                </div>
-                <h3>Lectura</h3>
-                <p>Sumergirme en libros que amplían mi conocimiento y creatividad.</p>
-            </article>
-            <!-- Hobby: Tocar guitarra -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-guitar" aria-hidden="true"></i>
-                </div>
-                <h3>Tocar guitarra</h3>
-                <p>Conectar con la música y explorar nuevas melodías que inspiran mi imaginación y me brindan momentos de reflexión y alegría.</p>
-            </article>
-            <!-- Hobby: Viajar -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-plane" aria-hidden="true"></i>
-                </div>
-                <h3>Viajar</h3>
-                <p>Explorar nuevas culturas, paisajes, y adquirir nuevas perspectivas.</p>
-            </article>
-            <!-- Hobby: Deportes -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                </div> 
-                <h3>Deportes</h3>
-                <p>Disfrutar del ejercicio físico y el trabajo en equipo para mantenerme activo.</p>
-            </article>
-            <!-- Hobby: Oir música -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-headphones-alt" aria-hidden="true"></i>
-                </div>
-                <h3>Oir música</h3>
-                <p>Sumergirme en un universo sonoro que me conecta con mis emociones, me relaja y me impulsa a la creatividad.</p>
-            </article>
-            <!-- Hobby: Ver series -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-tv" aria-hidden="true"></i>
-                </div>
-                <h3>Ver series</h3>
-                <p>Disfrutar de historias cautivadoras que me transportan a otros mundos, estimulan mi imaginación y me ofrecen momentos de desconexión y entretenimiento.</p>
-            </article>
-            <!-- Hobby: Cocinar -->
-            <article class="hobby_tarjeta" role="listitem">
-                <div class="icon">
-                    <i class="fas fa-utensils" aria-hidden="true"></i>
-                </div>
-                <h3>Cocinar</h3>
-                <p>Dejarme llevar por la creatividad en la cocina, probando combinaciones inesperadas y disfrutando de la satisfacción de un plato casero.</p>
-            </article>
+    <section
+      id="habilidades"
+      class="habilidades"
+      aria-labelledby="habilidades-heading"
+    >
+      <h2 id="habilidades-heading">Habilidades</h2>
+      <ul
+        class="habilidades_lista"
+        role="list"
+      >
+        <li role="listitem">HTML, CSS, JavaScript</li>
+        <li role="listitem">React</li>
+        <li role="listitem">Responsive Design</li>
+        <li role="listitem">Git, GitHub</li>
+      </ul>
+    </section>
+
+    <section
+      id="hobbies"
+      class="aficiones"
+      aria-labelledby="hobbies-heading"
+    >
+      <h2 id="hobbies-heading">Aficiones</h2>
+      <div
+        class="hobbies_container"
+        role="list"
+      >
+        <!-- Hobby: Lectura -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-book"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Lectura</h3>
+          <p>Sumergirme en libros que amplían mi conocimiento y creatividad.</p>
+        </article>
+        <!-- Hobby: Tocar guitarra -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-guitar"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Tocar guitarra</h3>
+          <p>
+            Conectar con la música y explorar nuevas melodías que inspiran mi
+            imaginación y me brindan momentos de reflexión y alegría.
+          </p>
+        </article>
+        <!-- Hobby: Viajar -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-plane"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Viajar</h3>
+          <p>
+            Explorar nuevas culturas, paisajes, y adquirir nuevas perspectivas.
+          </p>
+        </article>
+        <!-- Hobby: Deportes -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-heart"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Deportes</h3>
+          <p>
+            Disfrutar del ejercicio físico y el trabajo en equipo para
+            mantenerme activo.
+          </p>
+        </article>
+        <!-- Hobby: Oir música -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-headphones-alt"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Oir música</h3>
+          <p>
+            Sumergirme en un universo sonoro que me conecta con mis emociones,
+            me relaja y me impulsa a la creatividad.
+          </p>
+        </article>
+        <!-- Hobby: Ver series -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-tv"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Ver series</h3>
+          <p>
+            Disfrutar de historias cautivadoras que me transportan a otros
+            mundos, estimulan mi imaginación y me ofrecen momentos de
+            desconexión y entretenimiento.
+          </p>
+        </article>
+        <!-- Hobby: Cocinar -->
+        <article
+          class="hobby_tarjeta"
+          role="listitem"
+        >
+          <div class="icon">
+            <i
+              class="fas fa-utensils"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <h3>Cocinar</h3>
+          <p>
+            Dejarme llevar por la creatividad en la cocina, probando
+            combinaciones inesperadas y disfrutando de la satisfacción de un
+            plato casero.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="formacion"
+      class="formacion"
+      aria-labelledby="formacion-heading"
+    >
+      <h2 id="formacion-heading">Formación</h2>
+      <ul
+        class="formacion_lista"
+        role="list"
+      >
+        <li role="listitem">
+          Curso Desarrollador Front-End - Alura Latam / Oracle One Next
+          Education
+        </li>
+      </ul>
+    </section>
+
+    <section
+      id="projectos"
+      class="projectos"
+      aria-labelledby="projectos-heading"
+    >
+      <h2 id="projectos-heading">Proyectos</h2>
+      <div
+        class="projectos_grid"
+        role="list"
+      >
+        <a
+          href="space-app-ten-tau.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Página para ver fotos del espacio creada con React y JavaScript - Proyecto Alura"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/SpaceApp.png"
+              alt="Galeria de fotos creada con React y JavaScript"
+              class="img_proyecto"
+            />
+            <h3>Pagina con fotos del espacio creada con React y JavaScript</h3>
+            <p>Proyecto Alura</p>
+          </div>
+        </a>
+        <a
+          href="https://org-nine-alpha.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Página para organizar equipos creada con React y JavaScript - Proyecto Alura"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/Org.png"
+              alt="Juego creado con HTML, CSS y JavaScript"
+              class="img_proyecto"
+            />
+            <h3>Página para organizar equipos creada con React y JavaScript</h3>
+            <p>Proyecto Alura</p>
+          </div>
+        </a>
+
+        <a
+          href="https://challenge-alura-geek-flame-five.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Tienda creada con HTML, CSS y JavaScript - Proyecto Alura"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/alurageek.png"
+              alt="Tienda creada con HTML, CSS y JavaScript"
+              class="img_proyecto"
+            />
+            <h3>Tienda creada con HTML, CSS y JavaScript</h3>
+            <p>Proyecto AluraGeek</p>
+          </div>
+        </a>
+        <a
+          href="https://aluraplay-projecto-final-proyecto-base-one.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Página web de video creada con HTML y CSS - Proyecto Alura"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/aluraplay.png"
+              alt="Página web de video creada con HTML y CSS"
+              class="img_proyecto"
+            />
+            <h3>Página web de video creada con HTML y CSS</h3>
+            <p>Proyecto Alura página educativa</p>
+          </div>
+        </a>
+
+        <a
+          href="https://agencia-de-viajes-tau.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Agencia de viajes creada con HTML y CSS - Proyecto Alura"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/pagina_viajes1.png"
+              alt="Agencia de viajes creada con HTML y CSS"
+              class="img_pagina_viajes"
+            />
+            <h3>Agencia de viajes creada con HTML y CSS</h3>
+            <p>Proyecto Alura agencia de viajes</p>
+          </div>
+        </a>
+
+        <a
+          href="https://mayk03.github.io/Encryptador_de_texto/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Encriptador de texto creado con HTML, CSS y JavaScript - Challenge Oracle"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/encriptador.png"
+              alt="Encriptador de texto creado con HTML, CSS y JavaScript"
+              class="img_proyecto"
+            />
+            <h3>Encriptador de texto creado con HTML, CSS y JavaScript</h3>
+            <p>Challenge Oracle</p>
+          </div>
+        </a>
+
+        <a
+          href="https://juego-secreto-beige.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Juego creado con HTML, CSS y JavaScript - Proyecto Alura"
+        >
+          <div class="projecto_tarjeta">
+            <img
+              src="assets/img/juego_numero_secreto.png"
+              alt="Juego creado con HTML, CSS y JavaScript"
+              class="img_proyecto"
+            />
+            <h3>Juego creado con HTML, CSS y JavaScript</h3>
+            <p>Proyecto Alura Número secreto</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="contacto"
+      class="contacto"
+      aria-labelledby="contacto-heading"
+    >
+      <h2 id="contacto-heading">Contacto</h2>
+      <form
+        action="submit_form.php"
+        method="POST"
+        class="formulario_contacto"
+        aria-label="Formulario de contacto"
+      >
+        <div class="requerimiento_formulario">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
         </div>
-    </section>
-    
-
-    <section id="formacion" class="formacion" aria-labelledby="formacion-heading">
-        <h2 id="formacion-heading">Formación</h2>
-        <ul class="formacion_lista" role="list">
-            <li role="listitem">Curso Desarrollador Front-End - Alura Latam / Oracle One Next Education</li>
-        </ul>
-    </section>
-    
-
-    <section id="projectos" class="projectos" aria-labelledby="projectos-heading">
-        <h2 id="projectos-heading">Proyectos</h2>
-        <div class="projectos_grid" role="list">
-            <a 
-                href="space-app-ten-tau.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Página para ver fotos del espacio creada con React y JavaScript - Proyecto Alura">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/Org.png" alt="Galeria de fotos creada con React y JavaScript" class="img_proyecto">
-                    <h3>Pagina con fotos del espacio creada con React y JavaScript</h3>
-                    <p>Proyecto Alura</p>
-                </div>
-            </a>
-            <a 
-                href="https://org-nine-alpha.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Página para organizar equipos creada con React y JavaScript - Proyecto Alura">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/Org.png" alt="Juego creado con HTML, CSS y JavaScript" class="img_proyecto">
-                    <h3>Página para organizar equipos creada con React y JavaScript</h3>
-                    <p>Proyecto Alura</p>
-                </div>
-            </a>
-
-            <a 
-                href="https://challenge-alura-geek-flame-five.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Tienda creada con HTML, CSS y JavaScript - Proyecto Alura">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/alurageek.png" alt="Tienda creada con HTML, CSS y JavaScript" class="img_proyecto">
-                    <h3>Tienda creada con HTML, CSS y JavaScript</h3>
-                    <p>Proyecto AluraGeek</p>
-                </div>
-            </a>
-            <a 
-                href="https://aluraplay-projecto-final-proyecto-base-one.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Página web de video creada con HTML y CSS - Proyecto Alura">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/aluraplay.png" alt="Página web de video creada con HTML y CSS" class="img_proyecto">
-                    <h3>Página web de video creada con HTML y CSS</h3>
-                    <p>Proyecto Alura página educativa</p>
-                </div>
-            </a>
-
-            <a 
-                href="https://agencia-de-viajes-tau.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Agencia de viajes creada con HTML y CSS - Proyecto Alura">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/pagina_viajes1.png" alt="Agencia de viajes creada con HTML y CSS" class="img_pagina_viajes">
-                    <h3>Agencia de viajes creada con HTML y CSS</h3>
-                    <p>Proyecto Alura agencia de viajes</p>
-                </div>
-            </a>
-
-            <a 
-                href="https://mayk03.github.io/Encryptador_de_texto/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Encriptador de texto creado con HTML, CSS y JavaScript - Challenge Oracle">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/encriptador.png" alt="Encriptador de texto creado con HTML, CSS y JavaScript" class="img_proyecto">
-                    <h3>Encriptador de texto creado con HTML, CSS y JavaScript</h3>
-                    <p>Challenge Oracle</p>
-                </div>
-            </a>
-
-            <a 
-                href="https://juego-secreto-beige.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="listitem" 
-                aria-label="Juego creado con HTML, CSS y JavaScript - Proyecto Alura">
-                <div class="projecto_tarjeta">
-                    <img src="assets/img/juego_numero_secreto.png" alt="Juego creado con HTML, CSS y JavaScript" class="img_proyecto">
-                    <h3>Juego creado con HTML, CSS y JavaScript</h3>
-                    <p>Proyecto Alura Número secreto</p>
-                </div>
-            </a>
+        <div class="requerimiento_formulario">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
         </div>
-    </section>
-    
-
-    <section id="contacto" class="contacto" aria-labelledby="contacto-heading">
-        <h2 id="contacto-heading">Contacto</h2>
-        <form action="submit_form.php" method="POST" class="formulario_contacto" aria-label="Formulario de contacto">
-            <div class="requerimiento_formulario">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required aria-required="true">
-            </div>
-            <div class="requerimiento_formulario">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required aria-required="true">
-            </div>
-            <div class="requerimiento_formulario">
-                <label for="subject">Asunto</label>
-                <input type="text" id="subject" name="subject" required aria-required="true">
-            </div>
-            <div class="requerimiento_formulario">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-            </div>
-            <button type="submit" class="btn_enviar">Enviar</button>
-        </form>
-        <!-- Enlaces sociales debajo del formulario -->
-        <div class="redes_sociales" aria-label="Enlaces a redes sociales" role="complementary">
-            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="red_social" aria-label="Perfil de LinkedIn">
-                <div class="icono_nombre">
-                    <img src="assets/linkedin.png" alt="LinkedIn" class="icono_red">
-                    <p class="parrafo_redes">LinkedIn</p>
-                </div>
-            </a>
-            <a href="https://github.com/tu-usuario" target="_blank" class="red_social" aria-label="Perfil de GitHub">
-                <div class="icono_nombre">
-                    <img src="assets/github.png" alt="GitHub" class="icono_red">
-                    <p class="parrafo_redes">GitHub</p>
-                </div>
-            </a>
+        <div class="requerimiento_formulario">
+          <label for="subject">Asunto</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            aria-required="true"
+          />
         </div>
+        <div class="requerimiento_formulario">
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn_enviar"
+        >
+          Enviar
+        </button>
+      </form>
+      <!-- Enlaces sociales debajo del formulario -->
+      <div
+        class="redes_sociales"
+        aria-label="Enlaces a redes sociales"
+        role="complementary"
+      >
+        <a
+          href="https://www.linkedin.com/in/tu-perfil"
+          target="_blank"
+          class="red_social"
+          aria-label="Perfil de LinkedIn"
+        >
+          <div class="icono_nombre">
+            <img
+              src="assets/linkedin.png"
+              alt="LinkedIn"
+              class="icono_red"
+            />
+            <p class="parrafo_redes">LinkedIn</p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/tu-usuario"
+          target="_blank"
+          class="red_social"
+          aria-label="Perfil de GitHub"
+        >
+          <div class="icono_nombre">
+            <img
+              src="assets/github.png"
+              alt="GitHub"
+              class="icono_red"
+            />
+            <p class="parrafo_redes">GitHub</p>
+          </div>
+        </a>
+      </div>
     </section>
-    
-    <footer class="footer" role="contentinfo" aria-label="Información del pie de página">
-        <p>Desarrollado por <span class="nombre-desarrollador">Maycol Quinto</span> &copy; 2024</p>
+
+    <footer
+      class="footer"
+      role="contentinfo"
+      aria-label="Información del pie de página"
+    >
+      <p>
+        Desarrollado por
+        <span class="nombre-desarrollador">Maycol Quinto</span> &copy; 2024
+      </p>
     </footer>
-    <script src="formulario.js" defer></script> 
-</body>
+    <script
+      src="formulario.js"
+      defer
+    ></script>
+  </body>
 </html>
-
